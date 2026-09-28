@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Audio → Live Wallpaper Bridge",
+  "version": "1.0",
+  "description": "Streams a chosen tab's audio spectrum into your live wallpaper page. No screen-share capture bar.",
+  "permissions": ["tabCapture", "offscreen", "tabs", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://siliconvalley007.github.io/Neo-Cyberpunk-Audio-Visualizer-Web/*"
+      ],
+      "js": ["relay.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["inject.js"],
+      "matches": ["https://siliconvalley007.github.io/*"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
