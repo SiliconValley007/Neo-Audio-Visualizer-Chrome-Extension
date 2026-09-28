@@ -1,8 +1,5 @@
 window.addEventListener("neo-audio-bridge", (e) => {
-  if (typeof window.livelyAudioListener !== "function") {
-    console.warn("[NeoWP bridge] livelyAudioListener not found yet");
-    return;
-  }
+  if (typeof window.livelyAudioListener !== "function") return;
   const msg = e.detail;
   if (msg.type === "bands")
     window.livelyAudioListener(Float32Array.from(msg.bands));
