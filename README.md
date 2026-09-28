@@ -4,7 +4,7 @@ Chrome / Edge extension that feeds one browser tab's audio (YouTube Music,
 Spotify Web, etc.) into the **[Neo Cyberpunk Audio Visualizer](https://siliconvalley007.github.io/Neo-Cyberpunk-Audio-Visualizer-Web/)** web page,
 without the permanent "sharing this tab" bar. Nothing leaves your browser.
 
-![Preview](preview.png)
+![Preview](preview.gif)
 
 ## Install (Chrome or Edge, ~1 minute)
 1. Click **Code → Download ZIP** and extract it.
