@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Tab Audio → Live Wallpaper Bridge",
+  "name": "Neo Audio Visualizer Bridge",
   "version": "1.0",
   "description": "Streams a chosen tab's audio spectrum into your live wallpaper page. No screen-share capture bar.",
   "permissions": ["tabCapture", "offscreen", "tabs", "storage"],
